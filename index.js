@@ -128,6 +128,21 @@ usuario2.saludar();
 usuario1.edad();
 usuario2.edad();
 
+function Cuadrado(lado){
+    this.lado = lado;
+}
+
+Cuadrado.prototype.calcularArea = function(){
+    return this.lado * this.lado;
+}
+
+Cuadrado.prototype.calcularPerimetro = function(){
+    return this.lado * 4;
+}
+
+var cuadrado1 = new Cuadrado(2);
+console.log(cuadrado1.calcularArea());
+console.log(cuadrado1.calcularPerimetro());
 
 
 
