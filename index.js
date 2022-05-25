@@ -115,15 +115,18 @@ function Usuario(nombre){
 
 Usuario.prototype.saludar = function(){
     console.log("Hola soy el usuario: " + this.nombre);
+    Usuario.prototype.edad = 30;
+    console.log("La edad del usuario1 es: " + this.edad);
+    console.log("La edad del usuario2 es: " + this.edad);
 }
 
 var usuario1 = new Usuario("Pedro");
 var usuario2 = new Usuario("María");
-var usuario3 = new Usuario("Luis");
 
 usuario1.saludar();
 usuario2.saludar();
-usuario3.saludar();
+usuario1.edad();
+usuario2.edad();
 
 
 
