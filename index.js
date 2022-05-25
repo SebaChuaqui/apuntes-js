@@ -96,3 +96,17 @@ persona.saludar = function(){
 };
 
 persona.saludar();
+
+function Estudiante(nombre){ //Función Constructora
+    this.nombre = nombre;
+};
+
+var E1 = new Estudiante("Cecilia");
+var E2 = new Estudiante("Ricardo");
+var E3 = new Estudiante("Marcela");
+
+console.log(E1);
+console.log(E2);
+console.log(E3);
+
+
