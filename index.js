@@ -70,3 +70,29 @@ console.log(rectangulo);
 console.log(cuadrado.ancho);
 cuadrado.ancho = 7;
 cuadrado['ancho'] = 8;
+
+var vaca = new Object();
+vaca.sonido = function(){
+    console.log("moo");
+}
+
+vaca.sonido();
+
+// Notación literal
+
+perro = {
+    hablar: function(){
+        console.log("guau");
+    }
+};
+
+perro.hablar();
+
+var persona = new Object();
+persona.nombre = "Camila";
+
+persona.saludar = function(){
+    console.log("Hola soy " + this.nombre);
+};
+
+persona.saludar();
