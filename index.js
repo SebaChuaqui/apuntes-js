@@ -109,4 +109,22 @@ console.log(E1);
 console.log(E2);
 console.log(E3);
 
+function Usuario(nombre){
+    this.nombre = nombre;
+}
+
+Usuario.prototype.saludar = function(){
+    console.log("Hola soy el usuario: " + this.nombre);
+}
+
+var usuario1 = new Usuario("Pedro");
+var usuario2 = new Usuario("María");
+var usuario3 = new Usuario("Luis");
+
+usuario1.saludar();
+usuario2.saludar();
+usuario3.saludar();
+
+
+
 
