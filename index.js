@@ -144,5 +144,35 @@ var cuadrado1 = new Cuadrado(2);
 console.log(cuadrado1.calcularArea());
 console.log(cuadrado1.calcularPerimetro());
 
+let numeros = {};
+numeros.uno = 1;
+numeros.dos = 2;
+console.log(numeroTres);
+let numeroTres = 3;
+let resultado = sumar(numeros.uno, numeroTres);
+console.log(resultado);
+function sumar (a,b){
+    return a+b
+}
 
+// let suma = (n1,n2) => n1+n2;
+// console.log(`El resultado de la suma es ${suma(3,4)}`);
+
+"use strict";
+var suma = function suma(n1,n2){
+    return n1 + n2
+};
+console.log("El resultado de la suma es ".concat(suma(3,4)));
+
+class Cuadrado{
+    constructor(num){
+        this.num = num;
+    }
+    calcularCuadrado(){
+        return Math.pow(num,2);
+    }
+}
+
+let resultados = new Cuadrado(3);
+console.log(resultados.calcularCuadrado());
 
